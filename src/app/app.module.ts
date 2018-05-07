@@ -12,7 +12,6 @@ import { TextComponent } from './components/text/text.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 
-
 const materials = [
   MatToolbarModule, 
   MatButtonModule, 
