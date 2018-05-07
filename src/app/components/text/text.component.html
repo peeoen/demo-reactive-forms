@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Name" formControlName="name">
+  </mat-form-field>
+</form>
+
+<p>Form Value : {{form.value | json}}</p>
