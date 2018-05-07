@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -30,8 +30,6 @@ export class CheckboxComponent implements OnInit {
     }
   ];
 
-  get arrFoods(): FormArray { return this.form.get('foods') as FormArray; }
-
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -41,8 +39,7 @@ export class CheckboxComponent implements OnInit {
    createForm() {
     this.form = this.fb.group({
       foods: this.fb.array(this.foods.map(food => {
-        console.log(food);
-        return this.fb.control(food)
+        return this.fb.control(food, Validators.required)
       }))
      })
   }
