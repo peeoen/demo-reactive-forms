@@ -46,22 +46,4 @@ export class CheckboxComponent implements OnInit {
       }))
      })
   }
-
-  click(food) {
-    console.log(food);
-    console.log(this.form)
-  }
-  
-  // submit(value) {
-   
-  //   const f = Object.assign({}, value, {
-  //     skills: value.skills.map((s, i) => {
-  //     return {
-  //       id: this.user.skills[i].id,
-  //       selected: s
-  //     }
-  //   })
-  //   })
-  //    console.log(f);
-  // }
 }
