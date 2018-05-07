@@ -13,12 +13,14 @@ import { MatToolbarModule,
   MatListModule, 
   MatFormFieldModule, 
   MatInputModule,
-  MatRadioModule
+  MatRadioModule,
+  MatCheckboxModule
 } from '@angular/material';
 import { TextComponent } from './components/text/text.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { RadioComponent } from './components/radio/radio.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 const materials = [
   MatToolbarModule, 
@@ -29,6 +31,7 @@ const materials = [
   MatFormFieldModule,
   MatInputModule,
   MatRadioModule,
+  MatCheckboxModule,
   LayoutModule
 ]
 
@@ -38,7 +41,8 @@ const materials = [
     MainNavComponent,
     TextComponent,
     TextareaComponent,
-    RadioComponent
+    RadioComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

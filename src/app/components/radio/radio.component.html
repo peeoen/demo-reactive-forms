@@ -1,5 +1,5 @@
 <form [formGroup]="form">
-  <mat-radio-group formControlName="food">
+  <mat-radio-group class="radio-button-new-line" formControlName="food">
     <mat-radio-button *ngFor="let food of foods" [value]="food">
       {{food.name}} - {{food.price}}
     </mat-radio-button>

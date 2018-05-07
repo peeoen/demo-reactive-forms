@@ -26,6 +26,9 @@ export class MainNavComponent implements OnInit {
       },
       {
         name: 'radio'
+      },
+      {
+        name: 'checkbox'
       }
     ]
   }

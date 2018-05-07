@@ -1,0 +1,4 @@
+.radio-button-new-line {
+    display: inline-flex;
+    flex-direction: column;
+}
