@@ -12,10 +12,13 @@ import { MatToolbarModule,
   MatIconModule, 
   MatListModule, 
   MatFormFieldModule, 
-  MatInputModule
+  MatInputModule,
+  MatRadioModule
 } from '@angular/material';
 import { TextComponent } from './components/text/text.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { RadioComponent } from './components/radio/radio.component';
 
 const materials = [
   MatToolbarModule, 
@@ -25,6 +28,7 @@ const materials = [
   MatListModule, 
   MatFormFieldModule,
   MatInputModule,
+  MatRadioModule,
   LayoutModule
 ]
 
@@ -32,7 +36,9 @@ const materials = [
   declarations: [
     AppComponent,
     MainNavComponent,
-    TextComponent
+    TextComponent,
+    TextareaComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

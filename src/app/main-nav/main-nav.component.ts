@@ -20,6 +20,12 @@ export class MainNavComponent implements OnInit {
     this.controls = [
       {
         name: 'text'
+      },
+      {
+        name: 'textarea'
+      },
+      {
+        name: 'radio'
       }
     ]
   }

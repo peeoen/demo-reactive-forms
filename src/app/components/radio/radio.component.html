@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <mat-radio-group formControlName="food">
+    <mat-radio-button *ngFor="let food of foods" [value]="food">
+      {{food.name}} - {{food.price}}
+    </mat-radio-button>
+  </mat-radio-group>
+</form>
+
+<p>Form Value: {{ form.value | json }}</p>
