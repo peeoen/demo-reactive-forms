@@ -1,3 +1,4 @@
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { RadioComponent } from './components/radio/radio.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'text', component: TextComponent },
   { path: 'textarea', component: TextareaComponent },
   { path: 'radio', component: RadioComponent },
+  { path: 'checkbox', component: CheckboxComponent },
 ];
 
 @NgModule({

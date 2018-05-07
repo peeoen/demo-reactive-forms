@@ -1,0 +1,28 @@
+<!-- <form [formGroup]="form">
+    <ng-container formArrayName="foods">
+      <div *ngFor="let food of foods.controls; let i = index">
+        <mat-checkbox [formControl]="food">
+          {{food.name}} {{food | json}}
+        </mat-checkbox>
+      </div>
+    </ng-container>
+  </form>
+   -->
+
+   <!-- <form [formGroup]="form" (submit)="submit(form.value)">
+     {{skills | json}}
+      <div *ngFor="let skill of skills?.controls; let i=index">
+        <input type="checkbox" [formControl]="skill"/>{{user.skills[i].name}}
+      </div>
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <form [formGroup]="form">
+            <div *ngFor="let food of form.controls['foods'].controls; let i = index">
+              <mat-checkbox [formControl]="food" [value]="food.value" (click)="click(food)">
+                {{food.value | json}}  {{food.value.name}}
+              </mat-checkbox>
+            </div>
+       </form>
+    
+    {{ form.value | json }}
