@@ -1,26 +1,16 @@
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, 
-  MatButtonModule, 
-  MatSidenavModule, 
-  MatIconModule, 
-  MatListModule, 
-  MatFormFieldModule, 
-  MatInputModule,
-  MatRadioModule,
-  MatCheckboxModule
-} from '@angular/material';
-import { TextComponent } from './components/text/text.component';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TextareaComponent } from './components/textarea/textarea.component';
-import { RadioComponent } from './components/radio/radio.component';
+import { MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatListModule, MatRadioModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { RadioComponent } from './components/radio/radio.component';
+import { TextComponent } from './components/text/text.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
 
 const materials = [
   MatToolbarModule, 
