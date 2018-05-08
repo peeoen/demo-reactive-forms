@@ -1,0 +1,13 @@
+<div [formGroup]="form">
+    <div [ngSwitch]="question.controlType">
+      <!-- <input *ngSwitchCase="'textbox'" [formControlName]="question.key"
+              [id]="question.key" [type]="question.type"> -->
+                  <!-- <select [id]="question.key" *ngSwitchCase="'dropdown'" [formControlName]="question.key">
+        <option *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</option>
+      </select> -->
+      <app-textbox *ngSwitchCase="'textbox'" [question]="question" [form]="form"></app-textbox>
+      <app-dropdown *ngSwitchCase="'dropdown'" [form]="form" [question]="question"></app-dropdown>
+      <app-control-radio *ngSwitchCase="'radio'"></app-control-radio>
+    </div> 
+    <!-- <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div> -->
+  </div>

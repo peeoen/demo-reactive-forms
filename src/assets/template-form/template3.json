@@ -1,0 +1,35 @@
+[
+    {
+        "control": "dropdown",
+        "key": "address",
+        "label": "Province",
+        "options": [
+            {
+                "key": "bangkok",
+                "value": "bangkok"
+            },
+            {
+                "key": "nonthaburi",
+                "value": "nonthaburi"
+            },
+            {
+                "key": "loey",
+                "value": "loey"
+            },
+            {
+                "key": "songkla",
+                "value": "songkla"
+            }
+        ],
+        "order": 1
+    },
+    {
+        "control": "textbox",
+        "key": "zipcode",
+        "label": "Zip code",
+        "type": "number",
+        "value": "",
+        "required": true,
+        "order": 2
+    }
+]

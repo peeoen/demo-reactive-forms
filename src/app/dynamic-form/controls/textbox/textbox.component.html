@@ -1,0 +1,6 @@
+<div  [formGroup]="form">
+    <mat-form-field class="example-full-width">
+        <input matInput [formControlName]="question.key" placeholder="{{question.label}}" [type]="question.type">
+      </mat-form-field>
+      <label for="error message" *ngIf="!form.controls[question.key].valid">Error</label>
+  </div>

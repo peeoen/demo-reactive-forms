@@ -1,5 +1,5 @@
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-radio',
@@ -36,5 +36,4 @@ export class RadioComponent implements OnInit {
        food: this.fb.control(this.foods[0])
      })
   }
-
 }

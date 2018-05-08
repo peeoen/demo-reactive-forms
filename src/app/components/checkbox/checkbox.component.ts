@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -36,11 +36,13 @@ export class CheckboxComponent implements OnInit {
     this.createForm();
   }
 
+
    createForm() {
     this.form = this.fb.group({
       foods: this.fb.array(this.foods.map(food => {
         return this.fb.control(food, Validators.required)
-      }))
+      })),
      })
   }
+
 }
