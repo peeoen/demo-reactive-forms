@@ -1,0 +1,61 @@
+[
+    {
+        "control": "dropdown",
+        "key": "brave",
+        "label": "Bravery Rating",
+        "options": [
+            {
+                "key": "solid",
+                "value": "Solid"
+            },
+            {
+                "key": "great",
+                "value": "Great"
+            },
+            {
+                "key": "good",
+                "value": "Good"
+            },
+            {
+                "key": "unproven",
+                "value": "Unproven"
+            }
+        ],
+        "order": 1
+    },
+    {
+        "control": "textbox",
+        "key": "firstName",
+        "label": "First name",
+        "value": "",
+        "required": true,
+        "order": 2
+    },
+    {
+        "control": "textbox",
+        "key": "password",
+        "label": "password",
+        "type": "password",
+        "value": "",
+        "required": false,
+        "order": 3
+    },
+    {
+        "control": "textbox",
+        "key": "email",
+        "label": "email",
+        "type": "email",
+        "value": "",
+        "required": false,
+        "order": 4
+    },
+    {
+        "control": "textbox",
+        "key": "number",
+        "label": "number",
+        "type": "number",
+        "value": "",
+        "required": false,
+        "order": 5
+    }
+]

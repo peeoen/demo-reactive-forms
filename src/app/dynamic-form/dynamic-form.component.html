@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row" *ngIf="form">
+    <div class="col-lg-6" mat-dialog-content>
+        <div>
+            <form  (ngSubmit)="onSubmit()" [formGroup]="form">
+              <div *ngFor="let question of questions">
+                <app-dynamic-form-question style="width: 90%;" [question]="question" [form]="form"></app-dynamic-form-question>
+              </div>
+              <div  align="end">
+                <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Save</button>
+              </div>
+            </form>
+            <div *ngIf="payLoad">
+              <strong>Saved the following values</strong>
+              <br>{{payLoad}}
+            </div>
+          </div>
+          <div style="padding-top:20px;">
+              <p> Result :  {{ form.value | json}} </p>
+              <p> Status :  {{ form.status | json}} </p>
+          </div>
+
+    </div>
+    <div class="col-lg-6" style="padding: 0px 40px;" >
+        <mat-form-field class="full-width">
+            <textarea matInput placeholder="Note" rows="20" [(ngModel)]="jsonTxt"></textarea>
+          </mat-form-field>
+          <div align="end">
+              <button mat-raised-button color="danger" (click)="jsonTxt=''" style="margin-right:10px">Clear</button>
+              <button mat-raised-button color="accent" (click)="refreshConfigJson()">Refresh</button>
+          </div>
+    </div>
+  </div>
+</div>

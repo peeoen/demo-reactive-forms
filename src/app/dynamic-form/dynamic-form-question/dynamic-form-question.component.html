@@ -1,0 +1,8 @@
+<div [formGroup]="form">
+    <div [ngSwitch]="question.controlType">
+      <app-textbox *ngSwitchCase="'textbox'" [question]="question" [form]="form"></app-textbox>
+      <app-dropdown *ngSwitchCase="'dropdown'" [form]="form" [question]="question"></app-dropdown>
+      <app-control-radio *ngSwitchCase="'radio'"></app-control-radio>
+    </div> 
+    <!-- <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div> -->
+  </div>

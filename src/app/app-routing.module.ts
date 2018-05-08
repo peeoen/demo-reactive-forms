@@ -1,9 +1,10 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { RadioComponent } from './components/radio/radio.component';
-import { TextareaComponent } from './components/textarea/textarea.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { TextComponent } from './components/text/text.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'text', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'textarea', component: TextareaComponent },
   { path: 'radio', component: RadioComponent },
   { path: 'checkbox', component: CheckboxComponent },
+  { path: 'dynamic-form', component: DynamicFormComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,19 @@
+[
+    {
+        "control": "textbox",
+        "key": "username",
+        "label": "Username",
+        "value": "",
+        "required": true,
+        "order": 1
+    },
+    {
+        "control": "textbox",
+        "key": "password",
+        "label": "Password",
+        "type": "password",
+        "value": "",
+        "required": true,
+        "order": 2
+    }
+]
